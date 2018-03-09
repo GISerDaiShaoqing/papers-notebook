@@ -2,9 +2,9 @@
 这个repo主要记录平时阅读论文的一些笔记，论文包括关于GIS、地理、遥感、生态等相关方向，主要是感兴趣的方向或者是目前研究相关文章。笔记内容主要是我看文章时的想法，大致包括论文的idea，一些重要的要点和我的评价。目录按照类别进行整理,刚刚建立，内容将慢慢添加。
 
 **目录**
-[Urban Blue Space and Green Space](# Urban Blue Space and Green Space)
-[Forest and landscape Ecology](# Forest and landscape Ecology)
-    [1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局](## 1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局)
+[Urban Blue Space and Green Space](#Urban-Blue-Space-and-Green-Space)
+[Forest and landscape Ecology](#-Forest-and-landscape-Ecology)
+    [1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局](##1-Global-patterns-of-tropical-forest-fragmentation/全球热带森林破碎化格局)
 [Mapping High resolution Carbon Emission](# Mapping High resolution Carbon Emission)
     [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化](## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化 )
 [Urban Computing and GIS](# Urban Computing and GIS)
@@ -41,8 +41,11 @@ AL（Activity Levels）， EF（Emission Factors）各自有其概率分布，�
 
 Highlights:
 > (1)  一个按行业确定的中国特有的CO2排放因子数据库；
+
 > (2) 基于自下而上方法估计的中国2005~2009年CO2排放；
+
 > (3) 使用Monte-Carlo模拟定量化了中国CO2排放不确定性；
+
 > (4) 提高能源效率减缓了某些行业二氧化碳排放量的增加。
 
 Research gap/question：
@@ -50,7 +53,9 @@ Research gap/question：
 
 Disscussion：
 > (1) The difference can be attributed to the more detailed source categories in the current study, Which significantly reduce the random errors by the “compensation-of-error” mechanism realized through Monte-Carlo simulation. 数据差异的原因有可能是本研究更为精细的分类排放源，Monte-Carlo模拟中的误差补偿机制显著降低随机误差。
+
 > (2) Use of provincial-level energy statistics in the current work is likely the primary determinant of this difference. 使用省级能源统计数据可能是差异的主要原因（前文提到省级数据比全国数据更精确）。
+
 > (3) 政策影响和预测分析。
 
 这篇文章主要的讨论点不是太明显，因为是把结果和讨论混在一起写到的，总体来说讨论部分除了上面我提到的两个关键点之外，就是跟IPCC等机构的数据做对比，还有对政策部分的一些预测，EF排放因子表是非常不错的数据，此外生成了一个0.25°×0.25°的产品，以人口和经济摊的。
@@ -59,11 +64,11 @@ Graph/Table Interest:
 
 Emission Factors Table:
 
-[](!https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/1.png)
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/1.png)
 
 Uncertainty of CO2
 
-[](!https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/2.png)
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/2.png)
 
 # Urban Computing and GIS
 
