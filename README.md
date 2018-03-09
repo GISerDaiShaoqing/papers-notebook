@@ -2,13 +2,20 @@
 这个repo主要记录平时阅读论文的一些笔记，论文包括关于GIS、地理、遥感、生态等相关方向，主要是感兴趣的方向或者是目前研究相关文章。笔记内容主要是我看文章时的想法，大致包括论文的idea，一些重要的要点和我的评价。目录按照类别进行整理,刚刚建立，内容将慢慢添加。
 
 **目录**
+
 [Urban Blue Space and Green Space](#Urban-Blue-Space-and-Green-Space)
+
 [Forest and landscape Ecology](#-Forest-and-landscape-Ecology)
-    [1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局](##1-Global-patterns-of-tropical-forest-fragmentation/全球热带森林破碎化格局)
-[Mapping High resolution Carbon Emission](# Mapping High resolution Carbon Emission)
-    [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化](## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化 )
-[Urban Computing and GIS](# Urban Computing and GIS)
-[GIS,RS and IT Technology](# GIS,RS and IT Technology)
+
+[1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局](##1-Global-patterns-of-tropical-forest-fragmentation/全球热带森林破碎化格局)
+
+[Mapping High resolution Carbon Emission](#Mapping-High-resolution-Carbon-Emission)
+
+[1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化](##1-China’s-CO2-emissions-estimated-from-the-bottom-up:-Recent-trends,-spatial-distributions,-and-quantification-of-uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化 )
+
+[Urban Computing and GIS](#Urban-Computing-and-GIS)
+
+[GIS,RS and IT Technology](#GIS-RS-and-IT-Technology)
 
 # Urban Blue Space and Green Space
 
