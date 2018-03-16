@@ -103,6 +103,7 @@ Carbon Dioxide Emission = Acitivity Levels * Emission Factos
 AL（Activity Levels）， EF（Emission Factors）各自有其概率分布，进行10000 次Monte-Carlo模拟分析。有精细的排放因子对照表及对应的概率分布置信区间。
 
 **Highlights:**
+
 (1)  一个按行业确定的中国特有的CO2排放因子数据库；
 
 (2) 基于自下而上方法估计的中国2005~2009年CO2排放；
@@ -112,9 +113,11 @@ AL（Activity Levels）， EF（Emission Factors）各自有其概率分布，�
 (4) 提高能源效率减缓了某些行业二氧化碳排放量的增加。
 
 **Research gap/question：**
+
 全世界CO2排放最多的中国在估计CO2排放及不确定性上研究贫乏
 
 **Disscussion/Conclusion：**
+
 (1) The difference can be attributed to the more detailed source categories in the current study, Which significantly reduce the random errors by the “compensation-of-error” mechanism realized through Monte-Carlo simulation. 数据差异的原因有可能是本研究更为精细的分类排放源，Monte-Carlo模拟中的误差补偿机制显著降低随机误差。
 
 (2) Use of provincial-level energy statistics in the current work is likely the primary determinant of this difference. 使用省级能源统计数据可能是差异的主要原因（前文提到省级数据比全国数据更精确）。
@@ -134,76 +137,110 @@ Tab.2 Uncertainty of CO2
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/2.png)
 
 **Resources:**
+
 无
 
 # Urban Computing and GIS
 ## 1 Characterizing mixed-use buildings based on multi-source big data
 **Title:** Characterizing mixed-use buildings based on multi-source big data
+
 **Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13658816.2017.1410549)
+
 **Doi:** 10.1080/13658816.2017.1410549
+
 **Notes:** 
 
 ## 2 Quantitative Comparison of Open-Source Data for Fine-Grain Mapping of Land Use
 **Title:** Quantitative Comparison of Open-Source Data for Fine-Grain Mapping of Land Use
+
 **Link:** [原文链接](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-2-W7/981/2017/)
+
 **Doi:** 
+
 **Notes:** 
 
 ## 3 Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
 **Title:** Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
+
 **Link:** [原文链接](https://arxiv.org/abs/1711.03641)
+
 **Doi:** 
+
 **Notes:** 
 
 ## 4 The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
 **Title:** The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
+
 **Link:** [原文链接](https://arxiv.org/abs/1711.03641)
+
 **Doi:** 10.3390/rs9090865
+
 **Notes:**
 
 ## 5 Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
 **Title:** Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
+
 **Link:** [原文链接]()
+
 **Doi:** 10.3390/rs10030446
+
 **Notes:**
 
 ## 6 Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
 **Title:** Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
+
 **Link:** [原文链接]()
+
 **Doi:** 10.1080/13875868.2014.984300
+
 **Notes:**
 
 ## 7 Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
 **Title:** Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
+
 **Link:** [原文链接]()
+
 **Doi:** 10.1080/13658816.2017.1376065
+
 **Notes:**
 
 # GIS RS and IT Technology
 ## 1 R Package gdistance: Distances and Routes on Geographical Grids/R包gdistance：地理格网的距离和路径
 **Title:** R Package gdistance: Distances and Routes on Geographical Grids
+
 **Link:** [原文链接](https://www.jstatsoft.org/article/view/v076i13)
+
 **Doi:** 10.18637/jss.v076.i13
+
 **Notes:** 
 
 ## 2 A New Set of Spatial-Interaction Models: The Theory of Competing Destinations
 **Title:** A New Set of Spatial-Interaction Models: The Theory of Competing Destinations
+
 **Link:** [原文链接]()
+
 **Doi:** 10.1177/0308518X8301500103
+
 **Notes:** 
 
 ## 3 Mapping local variation in educational attainment across Africa
 **Title:** Mapping local variation in educational attainment across Africa
+
 **Link:** [原文链接](https://www.nature.com/articles/nature25761)
+
 **Doi:** 10.1038/nature25761
+
 **Notes:** 
 
 
 # Public Health and Environmental Risk Factors
 ## 1 Mapping child growth failure in Africa between 2000 and 2015
 **Title:** Mapping child growth failure in Africa between 2000 and 2015
+
 **Link:** [原文链接](https://www.nature.com/articles/nature25760)
+
 **Doi:** 10.1038/nature25760
+
 **Notes:** 
 
 ## 2 Real-time and Seamless Monitoring of Ground-level PM2.5 Using Satellite Remote Sensing
@@ -213,6 +250,9 @@ Tab.2 Uncertainty of CO2
 # Urban Resilience and Disasters
 ## 1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou
 **Title:** Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou
+
 **Link:** [原文链接](https://doi.org/10.1371/journal.pone.0190701)
+
 **Doi:** 
+
 **Notes:**
