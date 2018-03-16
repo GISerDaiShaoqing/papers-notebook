@@ -56,6 +56,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 情景模拟结果表明，再造林和保护大片森林（如a和b这样的）能够减缓全球森林破碎化的现状。
 
 **Highlights:**
+
 (1) 三个大洲热带森林高分辨率森林覆盖图(30 m)
 
 (2) 全球热带森林结构破碎化格局符合幂律分布特征
@@ -65,9 +66,11 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 (4) 动态景观破碎化模拟模型：FRAG, FRAG-B, FRAG-P
 
 **Research gap/question:**
+
 全球热带森林结构破碎化格局、未来的变化以及对气候变化的响应。
 
 **Disscussion/Conclusion:**
+
 (1) The findings of the extended percolation models underpin the universality of fragmentation patterns close to the critical point. 扩展渗透模型发现支撑了接近临界值的破碎化景观格局的普遍性。
 
 (2) This is a general feature of critical phenomena: their large-scale behaviour is independent of the underlying small-scale mechanisms.关键现象的一般特征，大尺度的行为是独立于小尺度的机制的。
@@ -84,6 +87,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/5.png)
 
 **Resources:**
+
 幂律分布拟合相关代码（Matlab）：http://tuvalu.santafe.edu/~aaronc/powerlaws/bins/
 
 # Mapping High resolution Carbon Emission
