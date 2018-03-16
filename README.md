@@ -77,6 +77,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 (3)Even though land use appears to be complex and diverse, our outcomes emphasize that simple mechanisms are sufficient for describing forest fragmentation structures at larger scales. 尽管土地利用变化多样复杂，我们的结果显示了简单的机制足以描述大尺度森林结构的破碎化。
 
+景观生态理论，遥感，森林生态学与气候变化的结合，从理论到实践。
 
 **Graph/Table Interest：**
 
