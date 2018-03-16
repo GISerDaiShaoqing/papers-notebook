@@ -8,9 +8,9 @@ Table of Contents
 
 * [Urban Blue Space and Green Space](#urban-blue-space-and-green-space)
 * [Forest and landscape Ecology](#forest-and-landscape-ecology)
-  * [1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局](#1-global-patterns-of-tropical-forest-fragmentation%E5%85%A8%E7%90%83%E7%83%AD%E5%B8%A6%E6%A3%AE%E6%9E%97%E7%A0%B4%E7%A2%8E%E5%8C%96%E6%A0%BC%E5%B1%80)
+  * [1 Global patterns of tropical forest fragmentation](#1-global-patterns-of-tropical-forest-fragmentation)
 * [Mapping High resolution Carbon Emission](#mapping-high-resolution-carbon-emission)
-  * [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化](#1--chinas-co2-emissions-estimated-from-the-bottom-up-recent-trends-spatial-distributions-and-quantification-of-uncertainties%E8%87%AA%E4%B8%8B%E8%80%8C%E4%B8%8A%E4%BC%B0%E8%AE%A1%E4%B8%AD%E5%9B%BDco2%E6%8E%92%E6%94%BE%E8%BF%91%E6%9C%9F%E8%B6%8B%E5%8A%BF%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83%E4%B8%8E%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E5%AE%9A%E9%87%8F%E5%8C%96)
+  * [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties](#1--chinas-co2-emissions-estimated-from-the-bottom-up-recent-trends-spatial-distributions-and-quantification-of-uncertainties)
 * [Urban Computing and GIS](#urban-computing-and-gis)
   * [1 Characterizing mixed\-use buildings based on multi\-source big data](#1-characterizing-mixed-use-buildings-based-on-multi-source-big-data)
   * [2 Quantitative Comparison of Open\-Source Data for Fine\-Grain Mapping of Land Use](#2-quantitative-comparison-of-open-source-data-for-fine-grain-mapping-of-land-use)
@@ -20,7 +20,7 @@ Table of Contents
   * [6 Spatio\-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age](#6-spatio-temporal-analytics-for-exploring-human-mobility-patterns-and-urban-dynamics-in-the-mobile-age)
   * [7 Simulating urban dynamics in China using a gradient cellular automata model based on S\-shaped curve evolution characteristics](#7-simulating-urban-dynamics-in-china-using-a-gradient-cellular-automata-model-based-on-s-shaped-curve-evolution-characteristics)
 * [GIS RS and IT Technology](#gis-rs-and-it-technology)
-  * [1 R Package gdistance: Distances and Routes on Geographical Grids/R包gdistance：地理格网的距离和路径](#1-r-package-gdistance-distances-and-routes-on-geographical-gridsr%E5%8C%85gdistance%E5%9C%B0%E7%90%86%E6%A0%BC%E7%BD%91%E7%9A%84%E8%B7%9D%E7%A6%BB%E5%92%8C%E8%B7%AF%E5%BE%84)
+  * [1 R Package gdistance: Distances and Routes on Geographical Grids](#1-r-package-gdistance-distances-and-routes-on-geographical-grids)
   * [2 A New Set of Spatial\-Interaction Models: The Theory of Competing Destinations](#2-a-new-set-of-spatial-interaction-models-the-theory-of-competing-destinations)
   * [3 Mapping local variation in educational attainment across Africa](#3-mapping-local-variation-in-educational-attainment-across-africa)
 * [Public Health and Environmental Risk Factors](#public-health-and-environmental-risk-factors)
@@ -36,8 +36,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # Forest and landscape Ecology
 
-## 1 Global patterns of tropical forest fragmentation/全球热带森林破碎化格局
-**Title:** Global patterns of tropical forest fragmentation
+## 1 Global patterns of tropical forest fragmentation
+**Title:** Global patterns of tropical forest fragmentation/全球热带森林破碎化格局
 
 **Link:** [原文链接](https://www.nature.com/articles/nature25508)
 
@@ -93,9 +93,9 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 # Mapping High resolution Carbon Emission
 
-## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化 
+## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties
 
-**Title:** China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties
+**Title:** China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties/自下而上估计中国CO2排放：近期趋势，空间分布与不确定性的定量化 
 
 **Link：** [原文链接](https://www.sciencedirect.com/science/article/pii/S1352231012004761?via%3Dihub)
 
@@ -210,8 +210,8 @@ Tab.2 Uncertainty of CO2
 **Notes:**
 
 # GIS RS and IT Technology
-## 1 R Package gdistance: Distances and Routes on Geographical Grids/R包gdistance：地理格网的距离和路径
-**Title:** R Package gdistance: Distances and Routes on Geographical Grids
+## 1 R Package gdistance: Distances and Routes on Geographical Grids
+**Title:** R Package gdistance: Distances and Routes on Geographical Grids/R包gdistance：地理格网的距离和路径
 
 **Link:** [原文链接](https://www.jstatsoft.org/article/view/v076i13)
 
