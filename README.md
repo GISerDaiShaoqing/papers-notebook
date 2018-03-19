@@ -223,6 +223,7 @@ Tab.2 Uncertainty of CO2
 
 
 **Highlights:**
+
 (1)  gdistance包；
 
 (2) transition* classes；
@@ -250,6 +251,7 @@ Tab.2 Uncertainty of CO2
 **Resources:**
 
 [gdistance](https://github.com/cran/gdistance)
+
 [circuitscape](http://www.circuitscape.org)
 
 
