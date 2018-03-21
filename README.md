@@ -19,6 +19,8 @@ Table of Contents
   * [5 Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data](#5-urban-land-use-mapping-by-combining-remote-sensing-imagery-and-mobile-phone-positioning-data)
   * [6 Spatio\-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age](#6-spatio-temporal-analytics-for-exploring-human-mobility-patterns-and-urban-dynamics-in-the-mobile-age)
   * [7 Simulating urban dynamics in China using a gradient cellular automata model based on S\-shaped curve evolution characteristics](#7-simulating-urban-dynamics-in-china-using-a-gradient-cellular-automata-model-based-on-s-shaped-curve-evolution-characteristics)
+  * [8 Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick\-ups and Dropoffs](#8-identifying-local-spatiotemporal-autocorrelation-patterns-of-taxi-pick-ups-and-dropoffs)
+  * [9 Challenges and Prospects of Uncertainties in Spatial Big Data Analytics](#9-challenges-and-prospects-of-uncertainties-in-spatial-big-data-analytics)
 * [GIS RS and IT Technology](#gis-rs-and-it-technology)
   * [1 R Package gdistance: Distances and Routes on Geographical Grids](#1-r-package-gdistance-distances-and-routes-on-geographical-grids)
   * [2 A New Set of Spatial\-Interaction Models: The Theory of Competing Destinations](#2-a-new-set-of-spatial-interaction-models-the-theory-of-competing-destinations)
@@ -27,6 +29,8 @@ Table of Contents
   * [1 Mapping child growth failure in Africa between 2000 and 2015](#1-mapping-child-growth-failure-in-africa-between-2000-and-2015)
   * [2 Real\-time and Seamless Monitoring of Ground\-level PM2\.5 Using Satellite Remote Sensing](#2-real-time-and-seamless-monitoring-of-ground-level-pm25-using-satellite-remote-sensing)
   * [3 Estimation of Ground PM2\.5 Concentrations using a DEM\-assisted Information Diffusion Algorithm: A Case Study in China](#3-estimation-of-ground-pm25-concentrations-using-a-dem-assisted-information-diffusion-algorithm-a-case-study-in-china)
+  * [4 Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System\-based Cross\-sectional Study](#4-natural-and-built-environmental-exposures-on-childrens-active-school-travel-a-dutch-global-positioning-system-based-cross-sectional-study)
+  * [5 The Uncertain Geographic Context Problem in the Analysis of the Relationships between Obesity and the Built Environment in Guangzhou](#5-the-uncertain-geographic-context-problem-in-the-analysis-of-the-relationships-between-obesity-and-the-built-environment-in-guangzhou)
 * [Urban Resilience and Disasters](#urban-resilience-and-disasters)
   * [1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou](#1-assessing-local-resilience-to-typhoon-disasters-a-case-study-in-nansha-guangzhou)
 
@@ -147,13 +151,53 @@ Tab.2 Uncertainty of CO2
 
 # Urban Computing and GIS
 ## 1 Characterizing mixed-use buildings based on multi-source big data
-**Title:** Characterizing mixed-use buildings based on multi-source big data
+**Title:** Characterizing mixed-use buildings based on multi-source big data/基于多源大数据的混合功能建筑物分类
 
 **Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13658816.2017.1410549)
 
 **Doi:** 10.1080/13658816.2017.1410549
 
-**Notes:** 
+**Notes:** 这个研究主要是集成了多源大数据（社交网络数据、出租车轨迹数据、POI兴趣点数据和遥感图像），利用一个概率模型来表征城市当中的混合功能建筑物的识别。并且以广州市天河区为例，模型分类精度达到了85%，同时对建筑物的空间分布模式进一步探究，大多数混合功能的建筑物都位于主要街道，而这个方法也将为小尺度城市规划评估和决策研究提供支持。文章主要重点是这个可以分类的概率模型。技术流程图如下：
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/8.png)
+
+数据源有四个社交网络数据（腾讯宜出行平台的时空数据）、出租车轨迹数据、POI兴趣点数据以及建筑足迹（Quick Bird影像解译），多源大数据共计两天时间获取（一天周末，一天工作日）。First Stage：首先出租车轨迹数据先提取了上下车的地点，接着用POI数据基于贝叶斯原理进行修正，得到不同建筑物乘客乘出租车出行目的的最大概率，当有多个出行目的的最大概率，就认为是混合功能建筑物。后期用IDW插值，最后与建筑足迹数据叠加。Second Stage：随机选取一些建筑物通过POI和百度街景地图识别出建筑物功能作为训练样本，统计建筑物内微信使用者的数量。这里有一个假设，人由于特定的目的（休息、吃饭等 ）长时间位于固定地点（家、餐厅），这些被称为活动中心，而关键假设就是，同一种功能的建筑物与微信用户的日常活动有相同的高峰时间。接着使用核密度估计方法来识别这些功能，如果有多个高峰时期就认为是混合功能建筑物。First Stage和Second Stage叠加之后，可能结果存在差异，又构建了一个correctation rule来进行推断。
+
+**Hightlights：**
+
+(1) 一种集成多源大数据和概率模型表征城市混合功能建筑物识别的方法；
+
+(2) 高精度分类模型；
+
+(3) 混合功能建筑空间分布模式。
+
+**Research gap/question：**
+
+到目前为止很少有研究能成功整合多源大数据描述城市混合功能建筑物识别。
+
+**Disscussion/Conclusion：**
+
+(1) Spatial distribution of mixed-use buildings. 混合功能区建筑物的分布与距城市中心的距离是一致的。从城市的内部到外部，建筑物的功能从混合到单一变化。
+
+(2) Spatial interaction between human activities and buildings’ functions. 建筑物类型影响了人类活动，建筑物类型越复杂，混合程度越高，居民通勤距离就越短。
+
+(3) Sources of inference errors. 多源数据，结构不同，采集时间也有差异。
+
+IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究的不足缺陷。
+
+**Graph/Table Interest：**
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/9.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/10.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/11.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/12.png)
+
+**Resources:**
+
+无
 
 ## 2 Quantitative Comparison of Open-Source Data for Fine-Grain Mapping of Land Use
 **Title:** Quantitative Comparison of Open-Source Data for Fine-Grain Mapping of Land Use
@@ -167,7 +211,7 @@ Tab.2 Uncertainty of CO2
 ## 3 Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
 **Title:** Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
 
-**Link:** [原文链接](https://arxiv.org/abs/1711.03641)
+**Link:** [原文链接](https://arxiv.org/abs/1708.01580)
 
 **Doi:** 
 
@@ -185,7 +229,7 @@ Tab.2 Uncertainty of CO2
 ## 5 Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
 **Title:** Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
 
-**Link:** [原文链接]()
+**Link:** [原文链接](http://www.mdpi.com/2072-4292/10/3/446/xml)
 
 **Doi:** 10.3390/rs10030446
 
@@ -194,7 +238,7 @@ Tab.2 Uncertainty of CO2
 ## 6 Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
 **Title:** Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
 
-**Link:** [原文链接]()
+**Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13875868.2014.984300)
 
 **Doi:** 10.1080/13875868.2014.984300
 
@@ -203,9 +247,27 @@ Tab.2 Uncertainty of CO2
 ## 7 Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
 **Title:** Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
 
-**Link:** [原文链接]()
+**Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13658816.2017.1376065)
 
 **Doi:** 10.1080/13658816.2017.1376065
+
+**Notes:**
+
+## 8 Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick-ups and Dropoffs
+**Title:** Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick-ups and Dropoffs
+
+**Link:** [原文链接](http://escholarship.ucop.edu/uc/item/04b2d8xp)
+
+**Doi:** DOI10.21433/B31104B2D8XP
+
+**Notes:**
+
+## 9 Challenges and Prospects of Uncertainties in Spatial Big Data Analytics
+**Title:** Challenges and Prospects of Uncertainties in Spatial Big Data Analytics
+
+**Link:** [原文链接](https://www.researchgate.net/publication/322265057_Challenges_and_Prospects_of_Uncertainties_in_Spatial_Big_Data_Analytics)
+
+**Doi:** DOI10.1080/24694452.2017.1421898
 
 **Notes:**
 
@@ -286,7 +348,43 @@ Tab.2 Uncertainty of CO2
 
 ## 2 Real-time and Seamless Monitoring of Ground-level PM2.5 Using Satellite Remote Sensing
 
+**Title:** Real-time and Seamless Monitoring of Ground-level PM2.5 Using Satellite Remote Sensing
+
+**Link:** [原文链接](https://www.researchgate.net/publication/323694623_Real-time_and_Seamless_Monitoring_of_Ground-level_PM25_Using_Satellite_Remote_Sensing)
+
+**Doi:** 
+
+**Notes:** 
+
 ## 3 Estimation of Ground PM2.5 Concentrations using a DEM-assisted Information Diffusion Algorithm: A Case Study in China
+
+**Title:** Estimation of Ground PM2.5 Concentrations using a DEM-assisted Information Diffusion Algorithm: A Case Study in China
+
+**Link:** [原文链接](https://www.nature.com/articles/s41598-017-14197-z?WT.feed_name=subjects_physical-sciences)
+
+**Doi:** 10.1038/s41598-017-14197-z
+
+**Notes:** 
+
+## 4 Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System-based Cross-sectional Study
+
+**Title:** Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System-based Cross-sectional Study
+
+**Link:** [原文链接](http://europepmc.org/abstract/MED/27010106)
+
+**Doi:** 10.1016/j.healthplace.2016.03.003  
+
+**Notes:** 
+
+## 5 The Uncertain Geographic Context Problem in the Analysis of the Relationships between Obesity and the Built Environment in Guangzhou
+
+**Title:** The Uncertain Geographic Context Problem in the Analysis of the Relationships between Obesity and the Built Environment in Guangzhou
+
+**Link:** [原文链接](http://europepmc.org/abstract/MED/29439392)
+
+**Doi:** 10.3390/ijerph15020308
+
+**Notes:** 
 
 # Urban Resilience and Disasters
 ## 1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou
@@ -294,6 +392,6 @@ Tab.2 Uncertainty of CO2
 
 **Link:** [原文链接](https://doi.org/10.1371/journal.pone.0190701)
 
-**Doi:** 
+**Doi:** 10.1371/journal.pone.0190701
 
 **Notes:**
