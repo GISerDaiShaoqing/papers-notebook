@@ -7,9 +7,9 @@ Table of Contents
 =================
 
 * [Urban Blue Space and Green Space](#urban-blue-space-and-green-space)
-* [Forest and landscape Ecology](#forest-and-landscape-ecology)
+* [Forest and Landscape Ecology](#forest-and-landscape-ecology)
   * [1 Global patterns of tropical forest fragmentation](#1-global-patterns-of-tropical-forest-fragmentation)
-* [Mapping High resolution Carbon Emission](#mapping-high-resolution-carbon-emission)
+* [Mapping High Resolution Carbon Emission](#mapping-high-resolution-carbon-emission)
   * [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties](#1--chinas-co2-emissions-estimated-from-the-bottom-up-recent-trends-spatial-distributions-and-quantification-of-uncertainties)
 * [Urban Computing and GIS](#urban-computing-and-gis)
   * [1 Characterizing mixed\-use buildings based on multi\-source big data](#1-characterizing-mixed-use-buildings-based-on-multi-source-big-data)
@@ -38,7 +38,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # Urban Blue Space and Green Space
 
-# Forest and landscape Ecology
+# Forest and Landscape Ecology
 
 ## 1 Global patterns of tropical forest fragmentation
 **Title:** Global patterns of tropical forest fragmentation/全球热带森林破碎化格局
@@ -95,7 +95,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 [幂律分布拟合相关代码（Matlab）](http://tuvalu.santafe.edu/~aaronc/powerlaws/bins/)
 
-# Mapping High resolution Carbon Emission
+# Mapping High Resolution Carbon Emission
 
 ## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties
 
@@ -320,7 +320,7 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 ## 2 A New Set of Spatial-Interaction Models: The Theory of Competing Destinations
 **Title:** A New Set of Spatial-Interaction Models: The Theory of Competing Destinations
 
-**Link:** [原文链接]()
+**Link:** [原文链接](http://journals.sagepub.com/doi/pdf/10.1177/0308518X8301500103)
 
 **Doi:** 10.1177/0308518X8301500103
 
