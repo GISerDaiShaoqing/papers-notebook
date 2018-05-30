@@ -2,15 +2,19 @@
 这个repo主要记录平时阅读论文的一些笔记，论文包括关于GIS、地理、遥感、生态等相关方向，主要是感兴趣的方向或者是目前研究相关文章。笔记内容主要是我看文章时的想法，大致包括论文的idea，一些重要的要点和我的评价。目录按照类别进行整理,刚刚建立，内容将慢慢添加。
 
 **目录**
-
 Table of Contents
 =================
 
 * [Urban Blue Space and Green Space](#urban-blue-space-and-green-space)
+  * [1 Dynamic assessments of population exposure to urban greenspace using multi\-source big data](#1-dynamic-assessments-of-population-exposure-to-urban-greenspace-using-multi-source-big-data)
 * [Forest and Landscape Ecology](#forest-and-landscape-ecology)
   * [1 Global patterns of tropical forest fragmentation](#1-global-patterns-of-tropical-forest-fragmentation)
+  * [2 Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China](#2-mapping-ecosystem-service-bundles-to-detect-distinct-types-of-multifunctionality-within-the-diverse-landscape-of-the-yangtze-river-basin-china)
+* [Data Assimilation](#data-assimilation)
+  * [1 A simplified data assimilation method for reconstructing time\-series MODIS NDVI data](#1-a-simplified-data-assimilation-method-for-reconstructing-time-series-modis-ndvi-data)
 * [Mapping High Resolution Carbon Emission](#mapping-high-resolution-carbon-emission)
   * [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties](#1--chinas-co2-emissions-estimated-from-the-bottom-up-recent-trends-spatial-distributions-and-quantification-of-uncertainties)
+  * [2 Effect of Urbanization on Carbon Dioxide Emissions Efficiency in the Yangtze River Delta, China](#2-effect-of-urbanization-on-carbon-dioxide-emissions-efficiency-in-the-yangtze-river-delta-china)
 * [Urban Computing and GIS](#urban-computing-and-gis)
   * [1 Characterizing mixed\-use buildings based on multi\-source big data](#1-characterizing-mixed-use-buildings-based-on-multi-source-big-data)
   * [2 Quantitative Comparison of Open\-Source Data for Fine\-Grain Mapping of Land Use](#2-quantitative-comparison-of-open-source-data-for-fine-grain-mapping-of-land-use)
@@ -21,22 +25,35 @@ Table of Contents
   * [7 Simulating urban dynamics in China using a gradient cellular automata model based on S\-shaped curve evolution characteristics](#7-simulating-urban-dynamics-in-china-using-a-gradient-cellular-automata-model-based-on-s-shaped-curve-evolution-characteristics)
   * [8 Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick\-ups and Dropoffs](#8-identifying-local-spatiotemporal-autocorrelation-patterns-of-taxi-pick-ups-and-dropoffs)
   * [9 Challenges and Prospects of Uncertainties in Spatial Big Data Analytics](#9-challenges-and-prospects-of-uncertainties-in-spatial-big-data-analytics)
+  * [10 Estimating Vehicle Fuel Consumption and Emissions Using GPS Big Data](#10-estimating-vehicle-fuel-consumption-and-emissions-using-gps-big-data)
+  * [11 Environmental benefits of bike sharing: A big data\-based analysis](#11-environmental-benefits-of-bike-sharing-a-big-data-based-analysis)
+  * [12 Growth, innovation, scaling, and the pace of life in cities](#12-growth-innovation-scaling-and-the-pace-of-life-in-cities)
+  * [13 Street as a big geo\-data assembly and analysis unit in urban studies: A case study using Beijing taxi data](#13-street-as-a-big-geo-data-assembly-and-analysis-unit-in-urban-studies-a-case-study-using-beijing-taxi-data)
 * [GIS RS and IT Technology](#gis-rs-and-it-technology)
   * [1 R Package gdistance: Distances and Routes on Geographical Grids](#1-r-package-gdistance-distances-and-routes-on-geographical-grids)
   * [2 A New Set of Spatial\-Interaction Models: The Theory of Competing Destinations](#2-a-new-set-of-spatial-interaction-models-the-theory-of-competing-destinations)
   * [3 Mapping local variation in educational attainment across Africa](#3-mapping-local-variation-in-educational-attainment-across-africa)
+  * [4 Spatiotemporal model for assessing the stability of urban human convergence and divergence patterns](#4-spatiotemporal-model-for-assessing-the-stability-of-urban-human-convergence-and-divergence-patterns)
+  * [5 Designing an Experiment to Investigate Subpixel Mapping as an Alternative Method to Obtain Land Use/Land Cover Maps](#5-designing-an-experiment-to-investigate-subpixel-mapping-as-an-alternative-method-to-obtain-land-useland-cover-maps)
 * [Public Health and Environmental Risk Factors](#public-health-and-environmental-risk-factors)
   * [1 Mapping child growth failure in Africa between 2000 and 2015](#1-mapping-child-growth-failure-in-africa-between-2000-and-2015)
   * [2 Real\-time and Seamless Monitoring of Ground\-level PM2\.5 Using Satellite Remote Sensing](#2-real-time-and-seamless-monitoring-of-ground-level-pm25-using-satellite-remote-sensing)
   * [3 Estimation of Ground PM2\.5 Concentrations using a DEM\-assisted Information Diffusion Algorithm: A Case Study in China](#3-estimation-of-ground-pm25-concentrations-using-a-dem-assisted-information-diffusion-algorithm-a-case-study-in-china)
   * [4 Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System\-based Cross\-sectional Study](#4-natural-and-built-environmental-exposures-on-childrens-active-school-travel-a-dutch-global-positioning-system-based-cross-sectional-study)
   * [5 The Uncertain Geographic Context Problem in the Analysis of the Relationships between Obesity and the Built Environment in Guangzhou](#5-the-uncertain-geographic-context-problem-in-the-analysis-of-the-relationships-between-obesity-and-the-built-environment-in-guangzhou)
+  * [6 Spatio\-Temporal Pattern Estimation of PM2\.5 in Beijing\-Tianjin\-Hebei Region Based on MODIS AOD and Meteorological Data Using the Back Propagation Neural Network](#6-spatio-temporal-pattern-estimation-of-pm25-in-beijing-tianjin-hebei-region-based-on-modis-aod-and-meteorological-data-using-the-back-propagation-neural-network)
+  * [7 Spatiotemporal Distribution of Satellite\-Retrieved Ground\-Level PM2\.5 and Near Real\-Time Daily Retrieval Algorithm Development in Sichuan Basin, China](#7-spatiotemporal-distribution-of-satellite-retrieved-ground-level-pm25-and-near-real-time-daily-retrieval-algorithm-development-in-sichuan-basin-china)
+  * [8 Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations](#8-assessment-of-human-health-impact-from-exposure-to-multiple-air-pollutants-in-china-based-on-satellite-observations)
+  * [9 High\-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression](#9-high-resolution-satellite-mapping-of-fine-particulates-based-on-geographically-weighted-regression)
+  * [10 Estimating national\-scale ground\-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD](#10-estimating-national-scale-ground-level-pm25-concentration-in-china-using-geographically-weighted-regression-based-on-modis-and-misr-aod)
 * [Urban Resilience and Disasters](#urban-resilience-and-disasters)
   * [1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou](#1-assessing-local-resilience-to-typhoon-disasters-a-case-study-in-nansha-guangzhou)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # Urban Blue Space and Green Space
+
+## 1 Dynamic assessments of population exposure to urban greenspace using multi-source big data
 
 # Forest and Landscape Ecology
 
@@ -95,6 +112,45 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 [幂律分布拟合相关代码（Matlab）](http://tuvalu.santafe.edu/~aaronc/powerlaws/bins/)
 
+## 2 Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China
+
+# Data Assimilation
+## 1 A simplified data assimilation method for reconstructing time-series MODIS NDVI data
+
+**Title:** A simplified data assimilation method for reconstructing time-series MODIS NDVI data/一种简化的数据同化方法用来重建MODIS NDVI时间序列数据
+
+**Link:** [原文链接](https://www.sciencedirect.com/science/article/pii/S0273117709003512)
+
+**Doi:** 10.1016/j.asr.2009.05.009
+
+**Notes:** 这个研究提供了一种简化的数据同化方法用来重建MODIS NDVI的时间序列数据。该研究使用三点平滑方法利用前三年的数据生成一个背景场数据，这个方法可以捕捉NDVI变化的年度特征，用2006年NDVI数据来测试这种简化的数据同化方法。每个时间步长，采用MODIS的QA数据根据经验确定背景场与NDVI观测值之间的权重。结果表明该方法有很好的鲁棒性和有效性。提出了数据同化通用的代价函数，并将代价函数引入到NDVI的数据同化框架时，进行了简化和推导。从而简化了数据同化的方式，同时由于难以直接估计背景场与观测场的误差协方差，于是通过MODIS的QA数据，根据经验计算权重系数。
+
+**Highlights:**
+(1) 一种简化的NDVI数据同化方式;
+
+(2)基于三点平滑的方法生成背景场;
+
+(3)在难以直接估计背景场和观测场的误差时，使用QA数据对权重系数计算。
+
+**Research gap/question:**
+
+数据同化技术过去是在气象、水文领域率先兴起的，但是同时地学下的对地观测数据、地面观测数据都存在大量噪声，如何整合这些含有噪声的数据得到更为精确的时空数据是目前地学研究的一大重点，而数据同化就是其中的一种关键性的方法。
+
+**Disscussion/Conclusion:**
+(1)  The background NDVI field has certain limitations in capturing detailed variations, but it can offer valuable information with respect to identifying and correcting noisy points in a multi-year average profile of vegetation. NDVI背景场在捕获详细变化方面有一定的局限性，但它可以提供有价值的信息，用于识别和纠正多年平均NDVI中的噪声点。
+
+(2)An important reason for this is the use of the synchronous QA flag to estimate the NDVI and to enable realistic corrections. However, the current reconstructing scheme can not always perform well at the onset of spring green due to the average background. The effects of outliers (e.g. strong spurious lows) will be considered as well for reducing the extension from neighboring data points. So a more effective scheme to determine the weight coefficient K will be developed.其中一个重要原因是使用QA数据来估计NDVI并校正。然而，由于背景场是多年平均得到的，目前的重建方案在春季植被变绿的开始阶段并表现不总是良好。异常值的影响（例如强烈的低估）也将被用于减少相邻数据点的扩展。因此，未来应当开发一个更有效的确定权重系数K的方案。
+
+这篇文章对于数据同化的概念理解是非常好的，而且也提供了一个范例，将数据同化的方法引入到生态学研究中。
+
+**Graph/Table Interest：**
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/13.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/14.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/15.png)
+
 # Mapping High Resolution Carbon Emission
 
 ## 1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties
@@ -148,6 +204,8 @@ Tab.2 Uncertainty of CO2
 **Resources:**
 
 无
+
+## 2 Effect of Urbanization on Carbon Dioxide Emissions Efficiency in the Yangtze River Delta, China
 
 # Urban Computing and GIS
 ## 1 Characterizing mixed-use buildings based on multi-source big data
@@ -271,6 +329,14 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+## 10 Estimating Vehicle Fuel Consumption and Emissions Using GPS Big Data
+
+## 11 Environmental benefits of bike sharing: A big data-based analysis
+
+## 12 Growth, innovation, scaling, and the pace of life in cities
+
+## 13 Street as a big geo-data assembly and analysis unit in urban studies: A case study using Beijing taxi data
+
 # GIS RS and IT Technology
 ## 1 R Package gdistance: Distances and Routes on Geographical Grids
 **Title:** R Package gdistance: Distances and Routes on Geographical Grids/R包gdistance：地理格网的距离和路径
@@ -335,6 +401,11 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+## 4 Spatiotemporal model for assessing the stability of urban human convergence and divergence patterns
+
+
+## 5 Designing an Experiment to Investigate Subpixel Mapping as an Alternative Method to Obtain Land Use/Land Cover Maps
+
 
 # Public Health and Environmental Risk Factors
 ## 1 Mapping child growth failure in Africa between 2000 and 2015
@@ -385,6 +456,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.3390/ijerph15020308
 
 **Notes:** 
+
+## 6 Spatio-Temporal Pattern Estimation of PM2.5 in Beijing-Tianjin-Hebei Region Based on MODIS AOD and Meteorological Data Using the Back Propagation Neural Network
+
+## 7 Spatiotemporal Distribution of Satellite-Retrieved Ground-Level PM2.5 and Near Real-Time Daily Retrieval Algorithm Development in Sichuan Basin, China
+
+## 8 Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations
+
+## 9 High-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression
+
+## 10 Estimating national-scale ground-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD
 
 # Urban Resilience and Disasters
 ## 1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou
