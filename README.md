@@ -45,7 +45,7 @@ Table of Contents
   * [7 Spatiotemporal Distribution of Satellite\-Retrieved Ground\-Level PM2\.5 and Near Real\-Time Daily Retrieval Algorithm Development in Sichuan Basin, China](#7-spatiotemporal-distribution-of-satellite-retrieved-ground-level-pm25-and-near-real-time-daily-retrieval-algorithm-development-in-sichuan-basin-china)
   * [8 Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations](#8-assessment-of-human-health-impact-from-exposure-to-multiple-air-pollutants-in-china-based-on-satellite-observations)
   * [9 High\-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression](#9-high-resolution-satellite-mapping-of-fine-particulates-based-on-geographically-weighted-regression)
-  * [10 Estimating national\-scale ground\-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD](#10-estimating-national-scale-ground-level-pm25-concentration-in-china-using-geographically-weighted-regression-based-on-modis-and-misr-aod)
+  * [10 Estimating national\-scale ground\-level PM2\.5 concentration in China using geographically weighted regression based on MODIS and MISR AOD](#10-estimating-national-scale-ground-level-pm25-concentration-in-china-using-geographically-weighted-regression-based-on-modis-and-misr-aod)
 * [Urban Resilience and Disasters](#urban-resilience-and-disasters)
   * [1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou](#1-assessing-local-resilience-to-typhoon-disasters-a-case-study-in-nansha-guangzhou)
 
@@ -126,6 +126,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 **Notes:** 这个研究提供了一种简化的数据同化方法用来重建MODIS NDVI的时间序列数据。该研究使用三点平滑方法利用前三年的数据生成一个背景场数据，这个方法可以捕捉NDVI变化的年度特征，用2006年NDVI数据来测试这种简化的数据同化方法。每个时间步长，采用MODIS的QA数据根据经验确定背景场与NDVI观测值之间的权重。结果表明该方法有很好的鲁棒性和有效性。提出了数据同化通用的代价函数，并将代价函数引入到NDVI的数据同化框架时，进行了简化和推导。从而简化了数据同化的方式，同时由于难以直接估计背景场与观测场的误差协方差，于是通过MODIS的QA数据，根据经验计算权重系数。
 
 **Highlights:**
+
 (1) 一种简化的NDVI数据同化方式;
 
 (2)基于三点平滑的方法生成背景场;
@@ -137,6 +138,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 数据同化技术过去是在气象、水文领域率先兴起的，但是同时地学下的对地观测数据、地面观测数据都存在大量噪声，如何整合这些含有噪声的数据得到更为精确的时空数据是目前地学研究的一大重点，而数据同化就是其中的一种关键性的方法。
 
 **Disscussion/Conclusion:**
+
 (1)  The background NDVI field has certain limitations in capturing detailed variations, but it can offer valuable information with respect to identifying and correcting noisy points in a multi-year average profile of vegetation. NDVI背景场在捕获详细变化方面有一定的局限性，但它可以提供有价值的信息，用于识别和纠正多年平均NDVI中的噪声点。
 
 (2)An important reason for this is the use of the synchronous QA flag to estimate the NDVI and to enable realistic corrections. However, the current reconstructing scheme can not always perform well at the onset of spring green due to the average background. The effects of outliers (e.g. strong spurious lows) will be considered as well for reducing the extension from neighboring data points. So a more effective scheme to determine the weight coefficient K will be developed.其中一个重要原因是使用QA数据来估计NDVI并校正。然而，由于背景场是多年平均得到的，目前的重建方案在春季植被变绿的开始阶段并表现不总是良好。异常值的影响（例如强烈的低估）也将被用于减少相邻数据点的扩展。因此，未来应当开发一个更有效的确定权重系数K的方案。
@@ -150,6 +152,40 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/14.png)
 
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/15.png)
+
+## 2 A review of data assimilation of remote sensing and crop models
+
+**Title:** A review of data assimilation of remote sensing and crop models/遥感数据与作物生长模型数据同化的综述
+
+**Link:** [原文链接](https://www.sciencedirect.com/science/article/pii/S1161030117301685)
+
+**Doi:** 10.1016/j.eja.2017.11.002
+
+**Notes:** 这是一篇关于作物生长模型、遥感数据与数据同化的综述文章。比较全面地讲述了作物生长模型、遥感数据与数据同化最近的发展综述。这里给了一个比较通用的数据同化概念解释。同化的目的是在空间和时间上整合各种信息的状态变量，以利用遥感方法优化作物模型中的作物参数。在处理数据同化时，首先必须区分观测变量（来自遥感数据资源），状态变量（来自完整的作物模型系统），模型参数（描述的观测变量与状态变量之间的关系，从这个角度也可以称其为观测算子）和输出变量（在大部分数据同化中产量）。在这篇文章里将数据同化算法分为三类：校准方法，强制方法和更新方法。第一部分是关于不同数据同化方法的有缺点比较和分析。这里有个关键表格。
+
+|算法|基础公式|算法机制与特点|参考文献|
+|--|:--:|:--:|:--:|
+|KF|$$X_k^f=M_{k-1,k}X_{k-1}^a$$ $$X_k^a=X_k^f+K_k(Y_k^o-H_kX_k^f)$$ $$K_k=(H_kP_k)^T[H_k(H_kP_k^f)^T+R_k]^{-1}$$|观测值用于在观测值存在时调整轨迹的模型状态值，得到当前时刻的最优状态值，然后重新初始化模型的当前状态估计值; 继续前向整合，直到有下一个观测数据。 它可以预测实时状态并更新状态，但当Hk和Mk非线性时不适用|Aubert et al. (2003) and Pellenq and Boulet (2004)|
+|EnKF|$$X_{i,k+1}^f=M_{k,k+1}(X_{i,k}^a+w_{i,k}),w_{i,k}\sim(0, Q_k)$$ $$X_{i,k+1}^a=X_{i,k+1}^f+K_{k+1}[Y_{k+1}-H(X_{i,k+1}^f)+v_{i,k}]$$ $$K_{k+1}=P_{k+1}H_{k+1}(HP_{k+1}^fH^T+R_k)^{-1}$$ $$X_{i,k+1}^a=\frac{1}{N}\sum_{i=1}^NX_{i,k+1}^a$$|通过蒙特卡罗方法将集合预测和卡尔曼滤波结合起来计算预测误差协方差。 它可以用于数据同化的非线性系统。 它在计算上不太密集并且容易进行并行计算。|Evensen (1994), Crow and Wood (2003) and Schläpfer and Richter (2002)|
+|3DVAR|$$J(X)=(X-X^b)^TB^{-1}(X-X^b)+(Y-HX)^TR^{-1}(Y-HX)$$ $$\Delta J(X)=2B^{-1}(X-X^b)-2H^TR^{-1}(Y-HX)$$|数据同化窗口T的所有观测用于调整模型中轨迹的预测值，构造成本函数J（X）表示分析场与真值之间的误差，求解成本函数的最小化最优解。 由于成本函数很难直接计算，需要借助梯度函数△J（X）和伴随模型。|Lorenc et al. (2000)|
+|4DVAR|$$J(X)=(X-X^b)^TB^{-1}(X-X^b)+\sum_{K=0}^{T}\,^{(Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X))))))^T}_{R^{-1}(Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X))))))}$$ $$\Delta J(X)=2B^{-1}(X-X^b)-2\sum_{K=0}^{T}\,^{\begin{cases}M_1^T\cdots M_{k-1}^TM_k^TH_k^TR_k^{-1}\end{cases}}_{[Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X)))))]}$$|基于3DVAR考虑状态Mt随时间的变化，T时刻状态的最优估计值为综合考虑Mt结果。 它还需要梯度函数和伴随模型的帮助。 由于考虑Mt.因此计算量更大。|Trémolet (2007)|
+|PF|$$P(X_k^a \mid X_{1:k})\approx\sum^{N}_{i=1}w_{i,k}\delta(X_k^a-X_{i,k}^a)$$ $$w_{i,k}\propto \frac{p(X_{i,k}^a \mid X_{1:k})}{q(X_{i,k}^a \mid X_{1:k})}, \sum_{i=1}^N w_{i,k}=1$$|用一组粒子对后验概率分布进行采样，然后根据采样点分析后验概率分布。 它不受非线性系统的限制和高斯分布的假设。 它适用于并行计算。|Moradkhani et al. (2005)|
+|HBM|$$p(\theta_D,\theta_P,Y\mid X)\approx \\ p(X_1\mid Y_1,\theta_D)\cdots p(X_n\mid Y_n, \theta_D)\\p(Y_1 \mid \theta_P,Y_2,\cdots.Y_n)\cdots p(Y_n ]mid \theta_P)\\p(\theta_D)p(\theta_P)$$|将数据同化分为数据，过程和参数桑格曾。针对每个层定义的一个条件概率模型。于是数据同化就转换为推理过程的问题和给定数据条件下参数的后验概率分布。|Sahu et al. (2009) and Plant and Holland (2011)|
+
+**Highlights:**
+
+(1) 作物生长模型、遥感数据与数据同化最近的发展综述；
+
+(2) 不同同化方法优缺点比较；
+
+(3) 不同误差源对数据同化链中不同部分的影响分析；
+
+(4) 它为今后的研究提供了进一步的机会和数据同化的发展方向。
+
+**Research gap/question:**
+
+
+
 
 # Mapping High Resolution Carbon Emission
 
