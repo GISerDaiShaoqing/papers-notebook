@@ -2,6 +2,7 @@
 这个repo主要记录平时阅读论文的一些笔记，论文包括关于GIS、地理、遥感、生态等相关方向，主要是感兴趣的方向或者是目前研究相关文章。笔记内容主要是我看文章时的想法，大致包括论文的idea，一些重要的要点和我的评价。目录按照类别进行整理,刚刚建立，内容将慢慢添加。
 
 **目录**
+
 Table of Contents
 =================
 
@@ -12,6 +13,7 @@ Table of Contents
   * [2 Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China](#2-mapping-ecosystem-service-bundles-to-detect-distinct-types-of-multifunctionality-within-the-diverse-landscape-of-the-yangtze-river-basin-china)
 * [Data Assimilation](#data-assimilation)
   * [1 A simplified data assimilation method for reconstructing time\-series MODIS NDVI data](#1-a-simplified-data-assimilation-method-for-reconstructing-time-series-modis-ndvi-data)
+  * [2 A review of data assimilation of remote sensing and crop models](#2-a-review-of-data-assimilation-of-remote-sensing-and-crop-models)
 * [Mapping High Resolution Carbon Emission](#mapping-high-resolution-carbon-emission)
   * [1  China’s CO2 emissions estimated from the bottom up: Recent trends, spatial distributions, and quantification of uncertainties](#1--chinas-co2-emissions-estimated-from-the-bottom-up-recent-trends-spatial-distributions-and-quantification-of-uncertainties)
   * [2 Effect of Urbanization on Carbon Dioxide Emissions Efficiency in the Yangtze River Delta, China](#2-effect-of-urbanization-on-carbon-dioxide-emissions-efficiency-in-the-yangtze-river-delta-china)
@@ -45,7 +47,7 @@ Table of Contents
   * [7 Spatiotemporal Distribution of Satellite\-Retrieved Ground\-Level PM2\.5 and Near Real\-Time Daily Retrieval Algorithm Development in Sichuan Basin, China](#7-spatiotemporal-distribution-of-satellite-retrieved-ground-level-pm25-and-near-real-time-daily-retrieval-algorithm-development-in-sichuan-basin-china)
   * [8 Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations](#8-assessment-of-human-health-impact-from-exposure-to-multiple-air-pollutants-in-china-based-on-satellite-observations)
   * [9 High\-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression](#9-high-resolution-satellite-mapping-of-fine-particulates-based-on-geographically-weighted-regression)
-  * [10 Estimating national\-scale ground\-level PM2\.5 concentration in China using geographically weighted regression based on MODIS and MISR AOD](#10-estimating-national-scale-ground-level-pm25-concentration-in-china-using-geographically-weighted-regression-based-on-modis-and-misr-aod)
+  * [10 Estimating national\-scale ground\-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD](#10-estimating-national-scale-ground-level-pm25-concentration-in-china-using-geographically-weighted-regression-based-on-modis-and-misr-aod)
 * [Urban Resilience and Disasters](#urban-resilience-and-disasters)
   * [1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou](#1-assessing-local-resilience-to-typhoon-disasters-a-case-study-in-nansha-guangzhou)
 
@@ -153,6 +155,9 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/15.png)
 
+**Resources:**
+无
+
 ## 2 A review of data assimilation of remote sensing and crop models
 
 **Title:** A review of data assimilation of remote sensing and crop models/遥感数据与作物生长模型数据同化的综述
@@ -161,16 +166,41 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 **Doi:** 10.1016/j.eja.2017.11.002
 
-**Notes:** 这是一篇关于作物生长模型、遥感数据与数据同化的综述文章。比较全面地讲述了作物生长模型、遥感数据与数据同化最近的发展综述。这里给了一个比较通用的数据同化概念解释。同化的目的是在空间和时间上整合各种信息的状态变量，以利用遥感方法优化作物模型中的作物参数。在处理数据同化时，首先必须区分观测变量（来自遥感数据资源），状态变量（来自完整的作物模型系统），模型参数（描述的观测变量与状态变量之间的关系，从这个角度也可以称其为观测算子）和输出变量（在大部分数据同化中产量）。在这篇文章里将数据同化算法分为三类：校准方法，强制方法和更新方法。第一部分是关于不同数据同化方法的有缺点比较和分析。这里有个关键表格。
+**Notes:** 这是一篇关于作物生长模型、遥感数据与数据同化的综述文章。比较全面地讲述了作物生长模型、遥感数据与数据同化最近的发展综述。这里给了一个比较通用的数据同化概念解释。同化的目的是在空间和时间上整合各种信息的状态变量，以利用遥感方法优化作物模型中的作物参数。在处理数据同化时，首先必须区分观测变量（来自遥感数据资源），状态变量（来自完整的作物模型系统），模型参数（描述的观测变量与状态变量之间的关系，从这个角度也可以称其为观测算子）和输出变量（在大部分数据同化中产量）。在这篇文章里将数据同化算法分为三类：校准方法，强制方法和更新方法。第一部分是关于不同数据同化方法的优缺点比较和分析。
 
-|算法|基础公式|算法机制与特点|参考文献|
-|--|:--:|:--:|:--:|
-|KF|$$X_k^f=M_{k-1,k}X_{k-1}^a$$ $$X_k^a=X_k^f+K_k(Y_k^o-H_kX_k^f)$$ $$K_k=(H_kP_k)^T[H_k(H_kP_k^f)^T+R_k]^{-1}$$|观测值用于在观测值存在时调整轨迹的模型状态值，得到当前时刻的最优状态值，然后重新初始化模型的当前状态估计值; 继续前向整合，直到有下一个观测数据。 它可以预测实时状态并更新状态，但当Hk和Mk非线性时不适用|Aubert et al. (2003) and Pellenq and Boulet (2004)|
-|EnKF|$$X_{i,k+1}^f=M_{k,k+1}(X_{i,k}^a+w_{i,k}),w_{i,k}\sim(0, Q_k)$$ $$X_{i,k+1}^a=X_{i,k+1}^f+K_{k+1}[Y_{k+1}-H(X_{i,k+1}^f)+v_{i,k}]$$ $$K_{k+1}=P_{k+1}H_{k+1}(HP_{k+1}^fH^T+R_k)^{-1}$$ $$X_{i,k+1}^a=\frac{1}{N}\sum_{i=1}^NX_{i,k+1}^a$$|通过蒙特卡罗方法将集合预测和卡尔曼滤波结合起来计算预测误差协方差。 它可以用于数据同化的非线性系统。 它在计算上不太密集并且容易进行并行计算。|Evensen (1994), Crow and Wood (2003) and Schläpfer and Richter (2002)|
-|3DVAR|$$J(X)=(X-X^b)^TB^{-1}(X-X^b)+(Y-HX)^TR^{-1}(Y-HX)$$ $$\Delta J(X)=2B^{-1}(X-X^b)-2H^TR^{-1}(Y-HX)$$|数据同化窗口T的所有观测用于调整模型中轨迹的预测值，构造成本函数J（X）表示分析场与真值之间的误差，求解成本函数的最小化最优解。 由于成本函数很难直接计算，需要借助梯度函数△J（X）和伴随模型。|Lorenc et al. (2000)|
-|4DVAR|$$J(X)=(X-X^b)^TB^{-1}(X-X^b)+\sum_{K=0}^{T}\,^{(Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X))))))^T}_{R^{-1}(Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X))))))}$$ $$\Delta J(X)=2B^{-1}(X-X^b)-2\sum_{K=0}^{T}\,^{\begin{cases}M_1^T\cdots M_{k-1}^TM_k^TH_k^TR_k^{-1}\end{cases}}_{[Y_k-H_k(M_k(M_{k-1}(\dots(M_1(X)))))]}$$|基于3DVAR考虑状态Mt随时间的变化，T时刻状态的最优估计值为综合考虑Mt结果。 它还需要梯度函数和伴随模型的帮助。 由于考虑Mt.因此计算量更大。|Trémolet (2007)|
-|PF|$$P(X_k^a \mid X_{1:k})\approx\sum^{N}_{i=1}w_{i,k}\delta(X_k^a-X_{i,k}^a)$$ $$w_{i,k}\propto \frac{p(X_{i,k}^a \mid X_{1:k})}{q(X_{i,k}^a \mid X_{1:k})}, \sum_{i=1}^N w_{i,k}=1$$|用一组粒子对后验概率分布进行采样，然后根据采样点分析后验概率分布。 它不受非线性系统的限制和高斯分布的假设。 它适用于并行计算。|Moradkhani et al. (2005)|
-|HBM|$$p(\theta_D,\theta_P,Y\mid X)\approx \\ p(X_1\mid Y_1,\theta_D)\cdots p(X_n\mid Y_n, \theta_D)\\p(Y_1 \mid \theta_P,Y_2,\cdots.Y_n)\cdots p(Y_n ]mid \theta_P)\\p(\theta_D)p(\theta_P)$$|将数据同化分为数据，过程和参数桑格曾。针对每个层定义的一个条件概率模型。于是数据同化就转换为推理过程的问题和给定数据条件下参数的后验概率分布。|Sahu et al. (2009) and Plant and Holland (2011)|
+这里可以重点阐述下优缺点，方法比较有个重要的表格。
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/16.png)
+
+优缺点比较：KF方法不能用于处理高维数据，作物冠层状态变量和结构往往难以作为输入，并且这会导致作物模型中输入的不确定性。因此，Evensen开发了EnKF来克服这些问题。一些研究表明，EnKF方法对作物模型和遥感数据之间的数据同化非常有用。变分方法（3DVAR和4DVAR）比卡尔曼滤波的集合变体更为成熟，并且在预测天气预报方面非常成功。在同化过程中，3DVAR模型可以使用复杂的观测算子;同化非直接或相关非线性观测的状态变量更容易。然而，3DVAR模型在实际应用中受到限制，因为计算成本较高。为了改善3DVAR的缺点，开发了基于3DVAR的4DVAR。它弥补了在某些情况下状态变量时间变化和初始化时3DVAR的不足。自提出以来，4DVAR广泛应用，并受到相当的关注和应用。 PF模型也被称为序贯蒙特卡罗滤波器，它是基于顺序重要性抽样滤波理论的贝叶斯估计而开发的。与KF系列算法相比，PF算法不受高斯分布假设的非线性误差的限制。 KF系列算法只能使用均值和方差的后验概率，而PF算法可以采用蒙特卡罗采样方法的后验分布概率。它在非线性系统的变化中具有更好的性能，并且更容易进行并行计算。 Berliner提出的HBM模型基于条件概率分布的理论基础，将复杂问题分解建立不同层次，各层之间通过条件概率相连，然后进行复杂的联合概率问题求解被转换成一系列简单的问题解决后验概率。 HBM是数据同化问题的理想方法。它具有贝叶斯理论和分层建模的优点;这两个性质使得HBM与其他数据同化方法有明显的区别。 HBM对数据同化的研究还远远落后于其他算法，但我们相信，随着计算机性能的发展和对物理过程的理解的提高，它将为数据同化带来新的发展。遥感技术和作物模型通过一定的算法相结合来提高生理生长模拟精度，并且该方法已被用于提高区域研究中作物产量的估计精度。
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/17.png)
+
+校准方法：将作物模型的初始参数调整为遥感数据与模拟状态变量（作物模型的模拟数据）之间的最佳一致性。使用不同积分参数值的真实范围手动或自动运行作物模型，以校准作物模型参数的灵敏度和不确定性。利用校正方法对作物模型和遥感数据进行数据同化。单纯形搜索算法，最大似然解（MLS），最小二乘法（LSM），Powell共轭方向法（PCDM），快速模拟退火算法（VFSA）和粒子群优化算法。
+
+强迫方法：强迫方法使用遥感数据替代作物模型模拟数据。遥感数据直接用于规定模拟数据，这些数据需要每个作物模型时间步骤的遥感数据的可行性，这些时间步骤在大多数作物模型中是每天，每周或每月。在正常情况下，卫星通行频率小于作物模型的时间步长。为了在作物模型的模拟数据中的时间步长驱动遥感数据，使用线性插值，快速傅立叶变换和小波方法来填补遥感数据观测之间的差距。遥感数据估算的LAI主要用作状态变量并输入作物模型。除了LAI，通过遥感提取开花日期或者用遥感估计截留效率指数（ε）和FAPAR也有部分研究。基于强迫法，作物模型和遥感数据的数据同化易于操作，严格来说，不涉及数据同化方法。作物模型的模拟状态变量或初始输入数据仅被估计的状态变量或遥感数据的初始输入数据替代。遥感提供了高精度的状态变量，并能够获得良好的估计结果。
+
+更新方法：当获得遥感数据是可行的时，更新方法包括不断更新农作物模型模拟数据。这是基于这样的假设，即在第t天更好的模拟数据将提高随后几天模拟数据的准确性。更新方法通常被称为数据同化，并且一些算法已被应用于遥感数据和作物模型的同化。利用EnKF，4DVar，PF，4DVar（POD4DVar）的适当正交分解技术和集合平方根滤波方法，将遥感数据和作物模型的状态变量整合起来用来估计土壤水分，AGB，LAI和产量。
+
+理论上校准方法优于强制和更新方法，但这种方法的主要缺点是需要大量的优化迭代，导致计算时间更长。与校准方法相比，更新方法显着减少了计算时间，因为只有作物模型运行。但是，这种方法也存在缺陷，因为它需要最昂贵的计算和测量不确定度。此外，更新方法需要在运行作物模型时调整作物参数变量。选择遥感影像的日期是影响估计精度的重要因素。同样已有研究证实了更新方法中物候转移对数据同化效率的影响。
+
+接着是不同误差源对数据同化链中不同部分的影响分析。
+
+(1) 作物生长模型——1.无法反应病虫害影响；2.模型遗传参数的误差；3.品种和区域管理参数合并；4.空间数据误差；5.单点开发模型，尺度扩展中违背系统边界。具体解决方案包括：1.增加模型中病虫害影响的响应；2.敏感性分析方法组合（EFAST, MCMC, GA, SCE-UA, GLUE)；4.遥感数据用来提供土壤属性、作物生长情况与天气数据；4.不同作物模型的整合。
+
+(2) 遥感数据——遥感技术的优点是它可以在不同的空间尺度上持续提供各种有用的作物信息。监测作物生长过程是农业收获的关键;主要指标包括LAI，冠层覆盖度，叶绿素含量，作物根系层土壤含水量，冠层含水量和胁迫因子等。目前，遥感数据的植被指数难以满足作物模型的要求。目前，定量遥感面临着定向问题，尺度效应和尺度转换以及反演策略和方法等主要问题。这些因素影响数据同化链上遥感数据的冠层状态变量的估计精度。
+
+(3) 方向问题——定量遥感中通常假设地表是理想朗伯体，从而进行各项推导，但是事实上，地面物体和电磁波相互作用不是各向同性的，并且具有明显的方向性。这种反射方向信息不仅包括光谱特征信息，还包含空间结构特征信息。一个复杂的检测环境可能具有相似的反射率（相同光谱的不同物体）并具有不同的反射率（同一物体的同义谱），从而导致模糊的结果。尝试探讨这方面的一些研究。1.基于场尺度的面向对象图像分析;它通过描绘来自多时间遥感图像的物体来获取各种纹理和空间特征以提高分类准确性;2.基于像素尺度的光学或雷达遥感图像;使用多时间光学或雷达遥感数据和机器学习方法来改善分类的准确性;3.基于像素尺度的光学和雷达遥感数据的组合;使用机器学习方法对多时相光学和雷达图像的不同组合进行评估，以更好地区分作物;4.基于像素或场规模的多分类器（机器学习方法）的组合;与使用单个分类器相比，的两个或多个分类器的集成提供了改进的分类准确性。
+
+(4) 尺度效应——由于自然环境非常复杂，地面物体在空间特征（空间异质性）方面存在很大差异。也就是说，地面物体在不同的空间尺度上显示的不同，它被称为尺度效应。不同地物的描述和研究需要根据不同的空间尺度进行。遥感技术为地球观测系统中的地球科学分析提供多空间和多时间分辨率数据，然后提供地面物体的不同空间尺度和时间数据。地面观测与不同尺度遥感数据之间的尺度转换是提高遥感数据应用效率和实用性的重要一步。此外关于高时空分辨率的权衡也是个关键问题。
+
+(5) 反演策略和方法——遥感反演模型用于估算作物冠层状态变量是非常广泛的、准确的状态变量定量描述需要考虑太阳的角度，叶面积密度和叶角空间的分布，并且必须有足够的样本数量。然而，遥感信息有限，地表条件复杂多变，有用的遥感观测资料较少获得，估计作物冠层状态变量就越困难。主要包括经验和物理方法。当前关键问题之一是许多遥感反演是不适当的;没有问题的确切解决方案。遥感反演策略和方法，如何引入先验知识至关重要。另外，它涉及了对遥感数据的理解，遥感机制的研究，遥感模型的精度，遥感和非遥感数据融合，和时空表面元素的转换。
+
+(6) 数据同化算法——目前的算法误差主要是指采样误差和各种数据同化方法的计算误差。采样误差是数据同化阶段的主要误差来源。大量的研究表明，采样数量的增加显着减少了采样误差，但增加了计算负担。计算错误来源于数据同化算法本身的问题。为了减少数据同化方法的误差，将不同数据同化算法的优点结合起来，进一步提高冠状态变量的估计精度（ENKF-3DVAR/4DVAR）。
+
+(7) 观测数据——观测数据主要包括仪器和代表性误差。仪器误差主要是由仪器测量的缺陷造成的;主要原因是仪器无法准确测量所需数据。代表性误差主要包括区间（样本与区间之间的距离），范围（时空测量的覆盖范围）和覆盖范围（样本的平均面积）。上述误差在数据同化系统的计算过程中相互影响，因此很难量化这些相关项目的误差。在集合数据同化中，“净”误差的影响将使得误差协方差矩阵产生小的偏差，而在预测误差中产生新的空间特征。已经开发了一系列错误处理方法来减少当前数据同化系统中的这些错误。这些方法不是对模式先验误差和观测误差的估计，而是在整个链中减少了各种误差对数据同化系统的影响。
+
+最后是未来的机遇。随着卫星的增多，可使用的遥感数据与观测数据越来越多。无人机数据、智能算法、物理光学方法与数据同化会进一步提升作物模拟的精度。
 
 **Highlights:**
 
@@ -184,8 +214,23 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 
 **Research gap/question:**
 
+作物生长模型、遥感数据与数据同化的整合用来提高模型预测精度。
 
+**Disscussion/Conclusion:**
+(1) The main error sources include crop models, remote sensing data (directional problem, scale effect, retrieval strategy and method, and linking remote sensing model and crop model), data assimilation methods, and observation data. 数据同化的主要误差源包括作物模型，遥感数据（方向问题，尺度效应，反演策略与方法，遥感模型与作物模型的耦合），数据同化算法与观测数据。
 
+(2) The data assimilation of remote sensing data and crop models will better improve the estimation accuracy of canopy state variables and yield based on new data assimilation algorithms by reducing the various errors of data assimilation chain in the future.通过减少未来数据同化链的各种误差，遥感数据和作物模型的数据同化将更好地提高基于新数据同化算法的冠层状态变量和产量的估计精度。
+
+**Graph/Table Interest：**
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/18.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/19.png)
+
+![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/20.png)
+
+**Resources：**
+无
 
 # Mapping High Resolution Carbon Emission
 
