@@ -217,6 +217,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 作物生长模型、遥感数据与数据同化的整合用来提高模型预测精度。
 
 **Disscussion/Conclusion:**
+
 (1) The main error sources include crop models, remote sensing data (directional problem, scale effect, retrieval strategy and method, and linking remote sensing model and crop model), data assimilation methods, and observation data. 数据同化的主要误差源包括作物模型，遥感数据（方向问题，尺度效应，反演策略与方法，遥感模型与作物模型的耦合），数据同化算法与观测数据。
 
 (2) The data assimilation of remote sensing data and crop models will better improve the estimation accuracy of canopy state variables and yield based on new data assimilation algorithms by reducing the various errors of data assimilation chain in the future.通过减少未来数据同化链的各种误差，遥感数据和作物模型的数据同化将更好地提高基于新数据同化算法的冠层状态变量和产量的估计精度。
@@ -230,6 +231,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/20.png)
 
 **Resources：**
+
 无
 
 # Mapping High Resolution Carbon Emission
