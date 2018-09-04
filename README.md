@@ -142,7 +142,7 @@ FRAG适用经典模型，而FRAG-B和FRAG-P则适用于复杂森林管理的模�
 [幂律分布拟合相关代码（Matlab）](http://tuvalu.santafe.edu/~aaronc/powerlaws/bins/)
 
 ## 2 Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China
-****Title:** Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China
+**Title:** Mapping Ecosystem Service Bundles to Detect Distinct Types of Multifunctionality within the Diverse Landscape of the Yangtze River Basin, China
 
 **Link:** [原文链接]()
 
