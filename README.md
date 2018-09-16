@@ -62,7 +62,6 @@ Table of Contents
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
-
 # Urban Blue Space and Green Space
 
 ## 1 Dynamic assessments of population exposure to urban greenspace using multi-source big data
@@ -454,47 +453,102 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 ## 3 Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
 **Title:** Sensing Urban Land-Use Patterns By Integrating Google Tensorflow And Scene-Classification Models
 
+
 **Link:** [原文链接](https://arxiv.org/abs/1708.01580)
 
 **Doi:** 
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 4 The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
 **Title:** The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
+
 
 **Link:** [原文链接](https://arxiv.org/abs/1711.03641)
 
 **Doi:** 10.3390/rs9090865
 
-**Notes:**
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 5 Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
 **Title:** Urban Land Use Mapping by Combining Remote Sensing Imagery and Mobile Phone Positioning Data
+
 
 **Link:** [原文链接](http://www.mdpi.com/2072-4292/10/3/446/xml)
 
 **Doi:** 10.3390/rs10030446
 
-**Notes:**
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 6 Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
 **Title:** Spatio-Temporal Analytics for Exploring Human Mobility Patterns and Urban Dynamics in the Mobile Age
+
 
 **Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13875868.2014.984300)
 
 **Doi:** 10.1080/13875868.2014.984300
 
-**Notes:**
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 7 Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
 **Title:** Simulating urban dynamics in China using a gradient cellular automata model based on S-shaped curve evolution characteristics
+
 
 **Link:** [原文链接](https://www.tandfonline.com/doi/abs/10.1080/13658816.2017.1376065)
 
 **Doi:** 10.1080/13658816.2017.1376065
 
-**Notes:**
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 8 Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick-ups and Dropoffs
 **Title:** Identifying Local Spatiotemporal Autocorrelation Patterns of Taxi Pick-ups and Dropoffs
@@ -505,6 +559,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 9 Challenges and Prospects of Uncertainties in Spatial Big Data Analytics
 **Title:** Challenges and Prospects of Uncertainties in Spatial Big Data Analytics
 
@@ -514,15 +578,115 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 10 Estimating Vehicle Fuel Consumption and Emissions Using GPS Big Data
+**Title:** Estimating Vehicle Fuel Consumption and Emissions Using GPS Big Data
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 11 Environmental benefits of bike sharing: A big data-based analysis
+**Title:** Environmental benefits of bike sharing: A big data-based analysis
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 12 Growth, innovation, scaling, and the pace of life in cities
+**Title:** Growth, innovation, scaling, and the pace of life in cities
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 13 Street as a big geo-data assembly and analysis unit in urban studies: A case study using Beijing taxi data
+**Title:** Street as a big geo-data assembly and analysis unit in urban studies: A case study using Beijing taxi data
 
-## 14 The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+## 14 The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
+**Title:** The Combined Use of Remote Sensing and Social Sensing Data in Fine-Grained Urban Land Use Mapping: A Case Study in Beijing, China
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 15 Mapping China’s Ghost Cities through the Combination of Nighttime Satellite Data and Daytime Satellite Data
 **Title:** Mapping China’s Ghost Cities through the Combination of Nighttime Satellite Data and Daytime Satellite Data
@@ -533,6 +697,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 16 Urban growth simulation by incorporating planning policies into a CA-based future land-use simulation model
 **Title:** Urban growth simulation by incorporating planning policies into a CA-based future land-use simulation model
 **Link:** [原文链接](https://www.tandfonline.com/doi/full/10.1080/13658816.2018.1502441)
@@ -541,6 +715,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 17 Portraying Urban Functional Zones by Coupling Remote Sensing Imagery and Human Sensing Data
 **Title:** Portraying Urban Functional Zones by Coupling Remote Sensing Imagery and Human Sensing Data
 **Link:** [原文链接](http://www.mdpi.com/2072-4292/10/1/141)
@@ -548,6 +732,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.3390/rs10010141
 
 **Notes:**
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 # GIS RS and IT Technology
 ## 1 R Package gdistance: Distances and Routes on Geographical Grids
@@ -574,7 +768,7 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 栅格数据的距离计算和最短路径求取的优化以及更精确表达。
 
-**Disscussion/Conclusion：**
+**Discussion/Conclusion：**
 
 (1) The section on distance transforms in de Smith, Goodchild, and Longley (2009) also discusses 16-cell neighborhoods.Connecting in 16 directions may increase the accuracy of the calculations.16邻域的邻域计算法则可能会提高距离计算的精度。
 
@@ -584,7 +778,7 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 软件开发类文章讨论较少，Future Study是一个比较值得关注的点。
 
-**Graph/Table Interest：**
+**Graph/Table interested：**
 
 ![](https://github.com/GISerDaiShaoqing/papers-notebook/blob/master/Picture/7.png)
 
@@ -604,6 +798,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 3 Mapping local variation in educational attainment across Africa
 **Title:** Mapping local variation in educational attainment across Africa
 
@@ -613,10 +817,55 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
-## 4 Spatiotemporal model for assessing the stability of urban human convergence and divergence patterns
+**Hightlights:** 
 
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+## 4 Spatiotemporal model for assessing the stability of urban human convergence and divergence patterns
+**Title:** Spatiotemporal model for assessing the stability of urban human convergence and divergence patterns
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 5 Designing an Experiment to Investigate Subpixel Mapping as an Alternative Method to Obtain Land Use/Land Cover Maps
+**Title:** Designing an Experiment to Investigate Subpixel Mapping as an Alternative Method to Obtain Land Use/Land Cover Maps
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 6 Spatial association detector (SPADE)
 **Title:** Spatial association detector (SPADE)
@@ -627,6 +876,17 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+
 ## 7 Spatiotemporal Fusion of Multisource Remote Sensing Data: Literature Survey, Taxonomy, Principles, Applications, and Future Directions
 **Title:** Spatiotemporal Fusion of Multisource Remote Sensing Data: Literature Survey, Taxonomy, Principles, Applications, and Future Directions
 
@@ -636,6 +896,17 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+
 ## 8 Modeling the Distributions of Brightness Temperatures of a Cropland Study Area Using a Model that Combines Fast Radiosity and Energy Budget Methods
 **Title:** Modeling the Distributions of Brightness Temperatures of a Cropland Study Area Using a Model that Combines Fast Radiosity and Energy Budget Methods
 
@@ -644,6 +915,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.3390/rs10050736
 
 **Notes:**
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 
 # Public Health and Environmental Risk Factors
@@ -656,6 +937,17 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+
 ## 2 Real-time and Seamless Monitoring of Ground-level PM2.5 Using Satellite Remote Sensing
 
 **Title:** Real-time and Seamless Monitoring of Ground-level PM2.5 Using Satellite Remote Sensing
@@ -665,6 +957,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 
 
 **Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 3 Estimation of Ground PM2.5 Concentrations using a DEM-assisted Information Diffusion Algorithm: A Case Study in China
 
@@ -676,6 +978,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 4 Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System-based Cross-sectional Study
 
 **Title:** Natural and Built Environmental Exposures on Children's Active School Travel: A Dutch Global Positioning System-based Cross-sectional Study
@@ -685,6 +997,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.1016/j.healthplace.2016.03.003  
 
 **Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 5 The Uncertain Geographic Context Problem in the Analysis of the Relationships between Obesity and the Built Environment in Guangzhou
 
@@ -696,15 +1018,114 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:** 
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 6 Spatio-Temporal Pattern Estimation of PM2.5 in Beijing-Tianjin-Hebei Region Based on MODIS AOD and Meteorological Data Using the Back Propagation Neural Network
+**Title:** Spatio-Temporal Pattern Estimation of PM2.5 in Beijing-Tianjin-Hebei Region Based on MODIS AOD and Meteorological Data Using the Back Propagation Neural Network
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 7 Spatiotemporal Distribution of Satellite-Retrieved Ground-Level PM2.5 and Near Real-Time Daily Retrieval Algorithm Development in Sichuan Basin, China
+**Title:** Spatiotemporal Distribution of Satellite-Retrieved Ground-Level PM2.5 and Near Real-Time Daily Retrieval Algorithm Development in Sichuan Basin, China
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 
 ## 8 Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations
+**Title:** Assessment of human health impact from exposure to multiple air pollutants in China based on satellite observations
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 9 High-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression
+**Title:** High-Resolution Satellite Mapping of Fine Particulates Based on Geographically Weighted Regression
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 10 Estimating national-scale ground-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD
+**Title:** Estimating national-scale ground-level PM25 concentration in China using geographically weighted regression based on MODIS and MISR AOD
+
+
+**Link:** [原文链接]()
+
+**Doi:** 
+
+**Notes:** 
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 ## 11 Evaluation of machine learning techniques with multiple remote sensing datasets in estimating monthly concentrations of ground-level PM2.5
 
@@ -716,6 +1137,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 
 **Notes:**
 
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
 ## 12 Spatiotemporal Distribution of Satellite-Retrieved Ground-Level PM2.5 and Near Real-Time Daily Retrieval Algorithm Development in Sichuan Basin, China
 **Title:** Spatiotemporal Distribution of Satellite-Retrieved Ground-Level PM2.5 and Near Real-Time Daily Retrieval Algorithm Development in Sichuan Basin, China
 
@@ -724,6 +1155,16 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.3390/atmos9020078
 
 **Notes:**
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
 
 # Urban Resilience and Disasters
 ## 1 Assessing local resilience to typhoon disasters: A case study in Nansha, Guangzhou
@@ -734,4 +1175,17 @@ IJGIS这篇文章的讨论部分偏向于研究结果的解释以及目前研究
 **Doi:** 10.1371/journal.pone.0190701
 
 **Notes:**
+
+**Hightlights:** 
+
+**Research gap/question:** 
+
+**Discussion/Conclusion** 
+
+**Graph/Table interested:** 
+
+**Resources:**
+
+
+
 
