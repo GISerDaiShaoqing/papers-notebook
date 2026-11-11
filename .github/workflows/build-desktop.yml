@@ -1,0 +1,37 @@
+name: Build desktop app
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: windows-x64
+          - os: macos-latest
+            platform: macos-arm64
+          - os: ubuntu-latest
+            platform: linux-x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install app and build dependencies
+        run: python -m pip install -e ".[build]"
+        working-directory: app
+      - name: Build standalone application
+        run: python build.py
+        working-directory: app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Dai_PNS-${{ matrix.platform }}
+          path: app/dist/Dai_PNS*
+          if-no-files-found: error

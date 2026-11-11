@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-note-desktop"
+version = "0.2.0"
+description = "Dai_PNS (Paper Note Studio): a desktop workspace for reading papers and editing Markdown notes"
+authors = [{ name = "戴劭勍 (Shaoqing Dai)" }]
+requires-python = ">=3.10"
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "Markdown>=3.5",
+    "PySide6>=6.8",
+    "pypdfium2>=4.30",
+    "pypdf>=5.0",
+    "keyring>=25.6",
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0"]
+
+[project.scripts]
+papernote = "papernote.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/GISerDaiShaoqing"
+Repository = "https://github.com/GISerDaiShaoqing/papers-notebook"
+Issues = "https://github.com/GISerDaiShaoqing/papers-notebook/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

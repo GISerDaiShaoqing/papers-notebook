@@ -1,0 +1,45 @@
+.md-content__inner {
+  max-width: 920px;
+}
+
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.9;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.45;
+}
+
+.md-typeset h2 {
+  border-left: 3px solid var(--md-accent-fg-color);
+  margin-top: 2.2em;
+  padding: 0.25em 0 0.25em 0.7em;
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.95;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--md-accent-fg-color);
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0.15rem 0.9rem;
+}
+
+.md-typeset img {
+  border-radius: 0.25rem;
+  display: block;
+  height: auto;
+  margin: 1.6rem auto;
+  max-width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-code-bg-color);
+}

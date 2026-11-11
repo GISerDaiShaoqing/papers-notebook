@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paper Reading"
+  short_description: "Draft notes using the repo's five complete examples."
+  brand_color: "#2D6876"
+  default_prompt: "Use $paper-reading to draft a note for this paper from the supplied PDF or source."
+policy:
+  allow_implicit_invocation: true

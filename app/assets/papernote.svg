@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#347d87"/>
+      <stop offset="1" stop-color="#173f4b"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#fffefa"/>
+      <stop offset="1" stop-color="#f4f6ef"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#41828a"/>
+      <stop offset="1" stop-color="#245a67"/>
+    </linearGradient>
+    <filter id="page-shadow" x="-18%" y="-15%" width="145%" height="145%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#102f38" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded teal tile keeps the original notebook mark legible at app-icon sizes. -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#tile)"/>
+  <path d="M92 29h328" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- The page and tinted binding strip echo the original spiral notebook. -->
+  <rect x="52" y="43" width="408" height="426" rx="48" fill="url(#paper)" filter="url(#page-shadow)"/>
+  <path d="M100 45h67v422h-67c-26 0-47-21-47-47V92c0-26 21-47 47-47z" fill="#e8f1ef"/>
+  <path d="M168 64v384" fill="none" stroke="#d4e2df" stroke-width="4"/>
+
+  <!-- Four sturdy rings preserve the old icon's hand-drawn binding motif. -->
+  <g fill="none" stroke="#2d6876" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M53 126h35m-35 86h35m-35 86h35m-35 86h35" stroke-width="13"/>
+    <circle cx="111" cy="126" r="22" stroke-width="12"/>
+    <circle cx="111" cy="212" r="22" stroke-width="12"/>
+    <circle cx="111" cy="298" r="22" stroke-width="12"/>
+    <circle cx="111" cy="384" r="22" stroke-width="12"/>
+  </g>
+  <g fill="#a7c3c1">
+    <circle cx="111" cy="126" r="6"/>
+    <circle cx="111" cy="212" r="6"/>
+    <circle cx="111" cy="298" r="6"/>
+    <circle cx="111" cy="384" r="6"/>
+  </g>
+
+  <!-- Paperclip remains the reading cue, now with a warm, polished accent. -->
+  <path d="M277 191l65-65c17-17 44 9 27 26l-76 76c-22 22-58-14-36-36l73-73"
+        fill="none" stroke="#d77e59" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M280 188l62-62c7-7 17 3 10 10l-75 75"
+        fill="none" stroke="#f6c29e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Quiet note lines add structure without crowding the original symbols. -->
+  <path d="M205 267h194m-194 31h110" fill="none" stroke="#b8c9c6" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- A friendly message bubble replaces the original solid black speech mark. -->
+  <path d="M220 351c0-20 16-36 36-36h142c20 0 36 16 36 36v43c0 20-16 36-36 36h-69l-39 31v-31h-34c-20 0-36-16-36-36z"
+        fill="url(#bubble)"/>
+  <circle cx="274" cy="372" r="8" fill="#fffefa"/>
+  <circle cx="326" cy="372" r="8" fill="#fffefa"/>
+  <circle cx="378" cy="372" r="8" fill="#fffefa"/>
+</svg>
