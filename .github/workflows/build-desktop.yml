@@ -6,6 +6,9 @@ on:
       - "v*"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     strategy:
@@ -30,8 +33,36 @@ jobs:
       - name: Build standalone application
         run: python build.py
         working-directory: app
+      - name: Prepare platform-specific release asset
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: |
+          suffix=""
+          if [[ "$PLATFORM" == "windows-x64" ]]; then suffix=".exe"; fi
+          mv "app/dist/Dai_PNS${suffix}" "app/dist/Dai_PNS-${PLATFORM}${suffix}"
       - uses: actions/upload-artifact@v4
         with:
           name: Dai_PNS-${{ matrix.platform }}
-          path: app/dist/Dai_PNS*
+          path: app/dist/Dai_PNS-${{ matrix.platform }}*
           if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: Dai_PNS-*
+          path: release-assets
+          merge-multiple: true
+      - name: Publish release with desktop builds
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Dai_PNS ${{ github.ref_name }}
+          generate_release_notes: true
+          files: |
+            release-assets/Dai_PNS-windows-x64.exe
+            release-assets/Dai_PNS-macos-arm64
+            release-assets/Dai_PNS-linux-x64
