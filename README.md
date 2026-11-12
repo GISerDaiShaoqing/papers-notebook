@@ -1,5 +1,15 @@
 # 论文阅读笔记
 
+| 项目 | 信息 |
+|:--|:--|
+| 作者 | 戴劭勍（Shaoqing Dai） |
+| 主页 | <https://gisersqdai.top/mycv/> |
+| GitHub | [@GISerDaiShaoqing](https://github.com/GISerDaiShaoqing) |
+| 邮箱 | <dsq1993qingge@163.com> |
+| ORCID | [0000-0003-0858-4728](https://orcid.org/0000-0003-0858-4728) |
+| 在线笔记 | [Dai_PNS · Paper Note Studio](https://giserdaishaoqing.github.io/papers-notebook/) |
+| License | MIT |
+
 这里是 Dai_PNS 论文笔记仓库的入口。笔记正文以独立 Markdown 文件保存，桌面端用于编辑和精读，静态网站用于分类浏览与分享。
 
 [打开在线笔记网站](https://giserdaishaoqing.github.io/papers-notebook/) · [查看分类与笔记索引](notes/INDEX.md)
